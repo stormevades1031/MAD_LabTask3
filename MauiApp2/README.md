@@ -30,4 +30,4 @@ A cross-platform .NET MAUI app targeting Android, iOS, macOS, and Windows. It de
 - `App.xaml`, `AppShell.xaml`: app shell and styles
 
 ## Repository
-- GitHub: https://github.com/stormevades1031/MAD_LabTask4
+- GitHub: https://github.com/stormevades1031/MAD_LabTask3
