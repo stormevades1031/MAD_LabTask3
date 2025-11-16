@@ -1,4 +1,4 @@
-# MAD Lab Task 4 – MauiApp2 (.NET MAUI)
+# MAD Lab Task 3 – MauiApp2 (.NET MAUI)
 
 A cross-platform .NET MAUI app targeting Android, iOS, macOS, and Windows. It demonstrates a pet profile UI, grid layouts, buttons, and basic interactivity.
 
