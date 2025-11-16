@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp2.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="0">
+
+            <Image
+                Source="cat.jpg"
+                Aspect="AspectFit"
+                SemanticProperties.Description="image of a cat" />
+
+            <VerticalStackLayout
+                Padding="30,0"
+                Spacing="25">
+
+                <Border Stroke="LightGray" 
+                        StrokeThickness="0.4" 
+                        BackgroundColor="LightYellow"
+                        Padding="15">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="10" />
+                    </Border.StrokeShape>
+                    <VerticalStackLayout Spacing="10">
+
+                        <Grid ColumnDefinitions="*,Auto">
+                            <Label Grid.Column="0"
+                                   Text="Ashley"
+                                   FontSize="20"
+                                   FontAttributes="Bold"
+                                   VerticalOptions="Center" />
+                            <Image Grid.Column="1"
+                                   Source="femaleicon.png"
+                                   HeightRequest="24"
+                                   WidthRequest="24" />
+                        </Grid>
+
+                        <Grid ColumnDefinitions="*,Auto,Auto">
+                            <Label Grid.Column="0"
+                                   Text="British Shorthair"
+                                   TextColor="DarkGray"
+                                   VerticalOptions="Center"/>
+                            <Image Grid.Column="1"
+                                   Source="historyicon.png"
+                                   HeightRequest="20"
+                                   WidthRequest="20" />
+                            <Label Grid.Column="2"
+                                   Text="1 year old"
+                                   TextColor="DarkGray"
+                                   VerticalOptions="Center"/>
+                        </Grid>
+
+                        <Grid ColumnDefinitions="Auto, *" ColumnSpacing="8">
+                            <Image Grid.Column="0"
+                                   Source="locationicon.png"
+                                   HeightRequest="20"
+                                   WidthRequest="20"
+                                   VerticalOptions="Start" />
+                            <Label Grid.Column="1"
+                                   Text="3B, Lorong 88, Taman Rantau Panjang, 96000 Sibu, Sarawak"
+                                   TextColor="DarkGray" />
+                        </Grid>
+
+                    </VerticalStackLayout>
+                </Border>
+
+                <Border Stroke="LightGray"
+                        StrokeThickness="1"
+                        Padding="15">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="10" />
+                    </Border.StrokeShape>
+
+                    <Grid RowDefinitions="Auto, Auto, Auto"
+                          ColumnDefinitions="Auto, *, Auto"
+                          RowSpacing="10"
+                          ColumnSpacing="15">
+
+                        <Image Grid.Row="0"
+                               Grid.Column="0"
+                               Source="husky.jpg"
+                               Aspect="AspectFill"
+                               HeightRequest="80"
+                               WidthRequest="80">
+                            <Image.Clip>
+                                <EllipseGeometry Center="40,40" RadiusX="40" RadiusY="40" />
+                            </Image.Clip>
+                        </Image>
+
+                        <VerticalStackLayout Grid.Row="0"
+                                             Grid.Column="1"
+                                             VerticalOptions="Center"
+                                             Spacing="2">
+                            <Label Text="Blue"
+                                   FontSize="22"
+                                   FontAttributes="Bold" />
+                            <Label Text="Ashley's best bud"
+                                   TextColor="DarkGray" />
+                        </VerticalStackLayout>
+
+                        <Label Grid.Row="0"
+                               Grid.Column="2"
+                               Text="1.11.2024"
+                               TextColor="DarkGray"
+                               VerticalOptions="Start" />
+
+                        <Label Grid.Row="1"
+                               Grid.Column="0"
+                               Grid.ColumnSpan="3"
+                               Text="Hey there! Blue is, has been, and always will be Ashley's best friend (even though she may never admit it). The pair make seemingly unlikely yet synergistic duo; one showing her affection in her own way and the other getting on Ashley's nerves all the time."
+                               FontSize="14"
+                               LineHeight="1.2" />
+
+                        <Grid Grid.Row="2"
+                              Grid.Column="0"
+                              Grid.ColumnSpan="3"
+                              Margin="0,10,0,0">
+
+                            <Button x:Name="HeartButton"
+                                    Clicked="HeartButton_Clicked"
+                                    BackgroundColor="LightGray"
+                                    HeightRequest="50"
+                                    WidthRequest="50"
+                                    CornerRadius="25"
+                                    HorizontalOptions="Start">
+                                <Button.ImageSource>
+                                    <FontImageSource Glyph="❤"
+                                                     Color="White"
+                                                     FontFamily="OpenSansRegular"
+                                                     Size="24"/>
+                                </Button.ImageSource>
+                            </Button>
+
+                            <Button Text="Adoption"
+                BackgroundColor="Gold"
+                TextColor="Black"
+                FontAttributes="Bold"
+                CornerRadius="25"
+                HeightRequest="50"
+                Padding="100,0"  HorizontalOptions="End" />
+                        </Grid>
+                    </Grid>
+                </Border>
+
+            </VerticalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
